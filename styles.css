@@ -90,6 +90,17 @@ h1 {
     user-select: none;
 }
 
+/* Change the appearance of the search bar cross */
+.searchBar::-webkit-search-cancel-button {
+    appearance: none;
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray"><path d="M18 6L6 18M6 6l12 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
 .searchBar:focus {
     width: 65%;
     background-color: rgba(255, 255, 255, 0.2);
